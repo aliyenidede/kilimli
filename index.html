@@ -14,15 +14,21 @@
 
 <body>
 
-  <header class="d-flex justify-content-center mt-5">
-    <img class="img-fluid mr-5" src="./img/kilimli-logo.png" alt="logo">
-    <h1>Online Ödeme Takip Sistemi</h1>
+  <header class="mt-md-5 container">
+    <div class="row align-items-center">
+      <div class="col-12 col-md-4">
+        <img class="img-fluid w-100 mr-5 d-flex mx-auto" src="./img/kilimli-logo.png" alt="logo">
+      </div>
+      <div class="col-md-8">
+        <h1 class="text-center d-none d-md-block">Online Ödeme Takip Sistemi</h1>
+      </div>
+    </div>
   </header>
 
   <main>
-    <div class="container my-5">
+    <div class="container-lg my-md-5">
       <div class="form-row mb-5">
-        <div class="col">
+        <div class="col-md my-2 my-md-none">
           <select class="form-control" id="firma">
             <option selected>Firma</option>
             <option value="Whatsapp">Whatsapp</option>
@@ -30,7 +36,7 @@
             <option value="Getir">Getir</option>
           </select>
         </div>
-        <div class="col">
+        <div class="col-md my-2 my-md-none">
           <select class="form-control" id="odeme">
             <option selected>Ödeme Şekli</option>
             <option value="Nakit">Nakit</option>
@@ -38,10 +44,10 @@
             <option value="Online Ödeme / Ödendi">Online Ödeme / Ödendi</option>
           </select>
         </div>
-        <div class="col">
+        <div class="col-md my-2 my-md-none">
           <input type="text" class="form-control" placeholder="Saat" id="saat">
         </div>
-        <div class="col">
+        <div class="col-md my-2 my-md-none">
           <input type="text" class="form-control" placeholder="Fiyat" id="fiyat">
         </div>
         <button class="btn btn-info" onclick="add_table()">Ekle</button>
